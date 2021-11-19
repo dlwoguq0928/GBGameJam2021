@@ -4,7 +4,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "ob_parent_solids",
+    "path": "objects/ob_parent_solids/ob_parent_solids.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -21,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "parents",
+    "path": "folders/Objects/parents.yy",
   },
   "resourceVersion": "1.0",
   "name": "ob_parent_organisms",

@@ -5,16 +5,24 @@ with(ob_parent_not_players)
 {
 	direction = p_dir - 180;
 	speed = p_spd;
-	
-	p.image_xscale = sign(lengthdir_x(p_dir,p_spd));
 }
 
 //tracker move
 with(ob_parent_trackers)
 {
-	motion_add(point_direction(x,y,p.x,p.y),t_spd_std);
+	direction = point_direction(x,y,p.x,p.y);
+	speed = t_spd_std;
 
-	image_xscale = sign(lengthdir_x(t_spd_std,point_direction(x,y,p.x,p.y)));
+	if (hspeed != 0) image_xscale = sign(hspeed);
+}
+
+//player move
+with(ob_player)
+{
+	direction = p_dir;
+	speed = p_spd;
+	
+	if (hspeed != 0) image_xscale = sign(hspeed);
 }
 
 //reduce the timeline

@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "parents",
+    "path": "folders/Objects/parents.yy",
   },
   "resourceVersion": "1.0",
   "name": "ob_parent_trackers",

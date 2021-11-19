@@ -24,19 +24,22 @@ for (i=0;i<2;i++)
 //if pressed, on joystick controlling
 for(i=0;i<2;i++)
 {
+	var mouse_view_x = device_mouse_x_view(i);
+	var mouse_view_y = device_mouse_y_view(i);
+	
 	if mse_chk_btn_pressed[i]
 	{
 		var dist;
 		
 		//# joystick
-		dist = point_distance(joystick_origin_x,joystick_origin_y,mouse_x,mouse_y);
+		dist = point_distance(joystick_origin_x,joystick_origin_y,mouse_view_x,mouse_view_y);
 		if (dist <= joystick_radius)
 		{
 			joystick_control = i;
 		}
 		
 		//# button
-		dist = point_distance(button_origin_x,button_origin_y,mouse_x,mouse_y);
+		dist = point_distance(button_origin_x,button_origin_y,mouse_view_x,mouse_view_y);
 		if (dist <= button_radius)
 		{
 			scr_absorber();  //'흡수'
@@ -47,14 +50,13 @@ for(i=0;i<2;i++)
 	//if clicked, move joystick
 	if mse_chk_btn[i]
 	{
+		joystick_point_x = mouse_view_x;
+		joystick_point_y = mouse_view_y;
 	
-		joystick_point_x = mouse_x;
-		joystick_point_y = mouse_y;
-	
-		var dist = point_distance(joystick_origin_x,joystick_origin_y,mouse_x,mouse_y);
+		var dist = point_distance(joystick_origin_x,joystick_origin_y,mouse_view_x,mouse_view_y);
 		if (dist > joystick_radius)
 		{
-			var dir = point_direction(joystick_origin_x,joystick_origin_y,mouse_x,mouse_y);
+			var dir = point_direction(joystick_origin_x,joystick_origin_y,mouse_view_x,mouse_view_y);
 			var delta_x = lengthdir_x(joystick_radius,dir);
 			var delta_y = lengthdir_y(joystick_radius,dir);
 			joystick_point_x = joystick_origin_x + delta_x;
