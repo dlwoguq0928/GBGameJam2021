@@ -4,10 +4,7 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "ob_parent_not_players",
-    "path": "objects/ob_parent_not_players/ob_parent_not_players.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -28,7 +25,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ob_parent_trackers",
+  "name": "ob_parent_not_players",
   "tags": [],
   "resourceType": "GMObject",
 }

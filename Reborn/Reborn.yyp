@@ -1,16 +1,19 @@
 {
   "resources": [
+    {"id":{"name":"ob_parent_not_players","path":"objects/ob_parent_not_players/ob_parent_not_players.yy",},"order":4,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":1,},
-    {"id":{"name":"ob_parent_organisms","path":"objects/ob_parent_organisms/ob_parent_organisms.yy",},"order":3,},
+    {"id":{"name":"ob_parent_walls","path":"objects/ob_parent_walls/ob_parent_walls.yy",},"order":7,},
     {"id":{"name":"ob_joystick_manager","path":"objects/ob_joystick_manager/ob_joystick_manager.yy",},"order":1,},
-    {"id":{"name":"ob_parent_trackers","path":"objects/ob_parent_trackers/ob_parent_trackers.yy",},"order":4,},
-    {"id":{"name":"ob_player","path":"objects/ob_player/ob_player.yy",},"order":5,},
+    {"id":{"name":"ob_parent_trackers","path":"objects/ob_parent_trackers/ob_parent_trackers.yy",},"order":5,},
+    {"id":{"name":"ob_player","path":"objects/ob_player/ob_player.yy",},"order":3,},
     {"id":{"name":"ob_tracker","path":"objects/ob_tracker/ob_tracker.yy",},"order":6,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
-    {"id":{"name":"ob_wall","path":"objects/ob_wall/ob_wall.yy",},"order":2,},
+    {"id":{"name":"ob_wall","path":"objects/ob_wall/ob_wall.yy",},"order":8,},
     {"id":{"name":"scr_absorber","path":"scripts/scr_absorber/scr_absorber.yy",},"order":0,},
     {"id":{"name":"ob_game_manager","path":"objects/ob_game_manager/ob_game_manager.yy",},"order":0,},
+    {"id":{"name":"scr_gameover","path":"scripts/scr_gameover/scr_gameover.yy",},"order":1,},
     {"id":{"name":"spr_tracker","path":"sprites/spr_tracker/spr_tracker.yy",},"order":2,},
+    {"id":{"name":"ob_parent_organisms","path":"objects/ob_parent_organisms/ob_parent_organisms.yy",},"order":2,},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},"order":0,},
   ],
   "Options": [

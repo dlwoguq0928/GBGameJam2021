@@ -28,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ob_parent_trackers",
+  "name": "ob_parent_walls",
   "tags": [],
   "resourceType": "GMObject",
 }

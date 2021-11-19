@@ -1,24 +1,20 @@
 /// @descr
 
-//approve value to organisms
-with(ob_parent_organisms)
+//player move
+with(ob_parent_not_players)
 {
-	if (hspeed != 0)
-	{
-		image_xscale = sign(hspeed);
-	}
-}
-
-with(ob_player)
-{
-	direction = p_dir;
+	direction = p_dir - 180;
 	speed = p_spd;
+	
+	p.image_xscale = sign(lengthdir_x(p_dir,p_spd));
 }
 
+//tracker move
 with(ob_parent_trackers)
 {
-	direction = point_direction(x,y,p.x,p.y);
-	speed = t_spd_std;
+	motion_add(point_direction(x,y,p.x,p.y),t_spd_std);
+
+	image_xscale = sign(lengthdir_x(t_spd_std,point_direction(x,y,p.x,p.y)));
 }
 
 //reduce the timeline
