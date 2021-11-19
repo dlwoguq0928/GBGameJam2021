@@ -26,11 +26,22 @@ for(i=0;i<2;i++)
 {
 	if mse_chk_btn_pressed[i]
 	{
-		var dist = point_distance(joystick_origin_x,joystick_origin_y,mouse_x,mouse_y);
+		var dist;
+		
+		//# joystick
+		dist = point_distance(joystick_origin_x,joystick_origin_y,mouse_x,mouse_y);
 		if (dist <= joystick_radius)
 		{
 			joystick_control = i;
 		}
+		
+		//# button
+		dist = point_distance(button_origin_x,button_origin_y,mouse_x,mouse_y);
+		if (dist <= button_radius)
+		{
+			scr_absorber();  //'흡수'
+		}
+		
 	}
 
 	//if clicked, move joystick

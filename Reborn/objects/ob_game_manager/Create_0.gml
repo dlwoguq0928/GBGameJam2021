@@ -13,5 +13,9 @@ p_hp = p_max_hp;
 globalvar t_spd_std;  //tracker variables
 t_spd_std = 7;
 
+globalvar wanted, timeline_max, timeline;
+wanted = "지명수배";
+timeline_max = 20;  //seconds
+timeline = timeline_max;
 
 alarm[0] = room_speed*1;  //start loop : generates trackers

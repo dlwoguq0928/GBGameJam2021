@@ -20,3 +20,13 @@ with(ob_parent_trackers)
 	direction = point_direction(x,y,p.x,p.y);
 	speed = t_spd_std;
 }
+
+//reduce the timeline
+if (timeline > 0)
+{
+	timeline -= 1/room_speed;
+	if (timeline < 0)
+	{
+		timeline = 0;
+	}
+}
