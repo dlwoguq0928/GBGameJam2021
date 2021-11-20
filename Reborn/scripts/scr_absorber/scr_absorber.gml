@@ -13,6 +13,8 @@ function scr_absorber_st(absorber_creature){
 		
 		//p.sprite_index = spr_player; //괴물 스프라이트로 잠시 되돌리기
 			
+		absorber_creature_confirmed_spr = absorber_creature.sprite_index; //변경할 스프라이트 확정
+		
 		//흡수한 대상 제거
 		with(absorber_creature)
 		{
@@ -26,18 +28,15 @@ function scr_absorber_st(absorber_creature){
 	}
 }
 
-function scr_absorber_nd(absorber_creature){
-	if instance_exists(absorber_creature)
+function scr_absorber_nd(){
+	var absorber_spr = absorber_creature_confirmed_spr;
+	if (p.sprite_index != absorber_spr)
 	{
-		var absorber_spr = absorber_creature.sprite_index;
-		if (p.sprite_index != absorber_spr)
-		{
-			p.sprite_index = absorber_spr;
-			xp += 1;
-			timeline = timeline_max;
+		p.sprite_index = absorber_spr;
+		xp += 1;
+		timeline = timeline_max;
 			
-			scr_closeup_screen(300);
-		}
+		scr_closeup_screen(300);
 	}
 	
 }

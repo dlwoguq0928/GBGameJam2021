@@ -37,6 +37,8 @@ if place_meeting(x,y+vspeed,ob_wall)
 //흡수 타겟 정하기
 absorber_creature = instance_nearest(x,y,ob_parent_creature);
 
+//show_debug_message(sprite_get_name(absorber_creature.sprite_index))
+
 //knockback
 if(knockback_spd > 0) 
 {

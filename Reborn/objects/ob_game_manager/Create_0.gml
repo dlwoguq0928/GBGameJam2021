@@ -11,11 +11,12 @@ p_max_hp = 10;
 p_hp = p_max_hp;
 p_invincible = 0;
 
-globalvar absorber_radius, absorber_creature, absorber_cooldown_std, absorber_cooldown;
+globalvar absorber_radius, absorber_creature, absorber_cooldown_std, absorber_cooldown, absorber_creature_confirmed_spr;
 absorber_radius = 100;  //흡수 가능 범위 (px)
 absorber_creature = noone;
 absorber_cooldown_std = room_speed*10;
 absorber_cooldown = absorber_cooldown_std;
+absorber_creature_confirmed_spr = noone;
 
 globalvar t_spd_std;  //tracker variables
 t_spd_std = 3;

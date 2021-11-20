@@ -54,33 +54,6 @@ if (wanted)
 			}
 		}
 	}
-	else
-	{
-	}
-
-	//shot (attack player)
-	var dist = point_distance(x,y,p.x,p.y);
-	if (dist <= shot_radius)
-	{
-		speed = 0;
-		shoting = true;
-	}
-	else
-	{
-		shoting = false;
-	}
-
-
-	//shoting
-	if shoting 
-	{
-		sprite_index = spr_tracker_shot;
-		image_xscale = sign(lengthdir_x(1,point_direction(x,y,p.x,p.y)));
-	}
-	else
-	{
-		sprite_index = spr_tracker;
-	}
 }
 
 //solid processing

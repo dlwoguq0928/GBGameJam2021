@@ -5,7 +5,7 @@
 if (timeline > 0)
 {
 	timeline -= 1/room_speed;
-	if (timeline < 0)
+	if (timeline <= 0)
 	{
 		timeline = 0;
 		

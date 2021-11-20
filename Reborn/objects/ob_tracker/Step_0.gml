@@ -57,9 +57,6 @@ if (wanted)
 			}
 		}
 	}
-	else
-	{
-	}
 
 	//shot (attack player)
 	var dist = point_distance(x,y,p.x,p.y);
