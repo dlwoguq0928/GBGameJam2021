@@ -23,16 +23,6 @@ else
 	image_speed = 0;
 }
 
-//solid processing
-if place_meeting(x+hspeed,y,ob_wall)
-{
-	hspeed = 0;
-}
-
-if place_meeting(x,y+vspeed,ob_wall)
-{
-	vspeed = 0;
-}
 
 //흡수 타겟 정하기
 absorber_creature = instance_nearest(x,y,ob_parent_creature);
@@ -61,6 +51,22 @@ if(knockback_spd > 0)
 	}
 }
 
+//solid processing
+if place_meeting(x+hspeed,y,ob_parent_walls)
+{
+	hspeed = 0;
+}
+
+if place_meeting(x,y+vspeed,ob_parent_walls)
+{
+	vspeed = 0;
+}
+
+//튜토리얼 무적
+if (room == rm_stage0)
+{
+	p_invincible = 2;
+}
 
 //depth processing
 depth = -y;

@@ -33,8 +33,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "ingame",
-    "path": "folders/Objects/ingame.yy",
+    "name": "trackers",
+    "path": "folders/Objects/ingame/trackers.yy",
   },
   "resourceVersion": "1.0",
   "name": "ob_tracker_riple",

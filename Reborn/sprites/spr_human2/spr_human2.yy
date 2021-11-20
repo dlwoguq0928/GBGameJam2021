@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "ingame",
-    "path": "folders/Sprites/ingame.yy",
+    "name": "creatures",
+    "path": "folders/Sprites/ingame/creatures.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_human2",

@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "ingame",
-    "path": "folders/Objects/ingame.yy",
+    "name": "creatures",
+    "path": "folders/Objects/ingame/creatures.yy",
   },
   "resourceVersion": "1.0",
   "name": "ob_human",

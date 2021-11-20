@@ -62,12 +62,12 @@ if (wanted)
 
 
 //solid processing
-if place_meeting(x+hspeed,y,ob_wall)
+if place_meeting(x+hspeed,y,ob_parent_walls)
 {
 	hspeed = 0;
 }
 
-if place_meeting(x,y+vspeed,ob_wall)
+if place_meeting(x,y+vspeed,ob_parent_walls)
 {
 	vspeed = 0;
 }

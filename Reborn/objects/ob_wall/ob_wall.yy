@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "ingame",
-    "path": "folders/Objects/ingame.yy",
+    "name": "buildings",
+    "path": "folders/Objects/ingame/buildings.yy",
   },
   "resourceVersion": "1.0",
   "name": "ob_wall",

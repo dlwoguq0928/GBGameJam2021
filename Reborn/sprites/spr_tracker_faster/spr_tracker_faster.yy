@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "ingame",
-    "path": "folders/Sprites/ingame.yy",
+    "name": "trackers",
+    "path": "folders/Sprites/ingame/trackers.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_tracker_faster",

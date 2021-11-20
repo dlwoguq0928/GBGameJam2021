@@ -28,7 +28,7 @@ timeline = timeline_max;
 
 globalvar xp, max_xp;  //energy bar
 xp = 0;
-max_xp = 5;
+max_xp = 6;
 
 alarm[0] = room_speed*1;  //start loop : generates trackers
 
