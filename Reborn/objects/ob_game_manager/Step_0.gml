@@ -37,8 +37,19 @@ if (absorber_cooldown > 0)
 	}
 }
 
+//일시 무적
+if (p_invincible > 0)
+{
+	p_invincible -= 1;
+	if (p_invincible < 0)
+	{
+		p_invincible = 0;
+	}
+}
+
+
 //지명수배
-if (timeline <= timeline_max/2) 
+if (timeline <= 9) 
 {
 	wanted = true;
 }

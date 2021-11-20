@@ -21,6 +21,9 @@ if place_meeting(x,y+vspeed,ob_parent_solids)
 	vspeed = 0;
 }
 
+//depth processing
+depth = -y;
+
 //룸 바깥 못 나가게 처리
 var spr_w = sprite_get_width(sprite_index);
 var spr_h = sprite_get_height(sprite_index);

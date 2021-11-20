@@ -30,12 +30,20 @@ if (wanted)
 	
 		if (p.alarm[1] == -1)
 		{
-			p_hp -= 1;
-			//p.x += lengthdir_x(10,point_direction(x,y,p.x,p.y));
-			//p.y += lengthdir_y(10,point_direction(x,y,p.x,p.y));
-			scr_shake_screen(10);
+			if (p_invincible == 0)
+			{
+				//knockback
+				p.knockback_spd = 10;
+				p.knockback_dir = point_direction(x,y,p.x,p.y);
+				
+				p_hp -= 1;
+				p_invincible = room_speed*0.5;
+				//p.x += lengthdir_x(10,point_direction(x,y,p.x,p.y));
+				//p.y += lengthdir_y(10,point_direction(x,y,p.x,p.y));
+				scr_shake_screen(10);
 	
-			if(p_hp <= 0) scr_gameover();
+				if(p_hp <= 0) scr_gameover();
+			}
 		}
 	}
 	else
@@ -68,12 +76,15 @@ if (wanted)
 }
 
 //solid processing
-if place_meeting(x+hspeed,y,ob_parent_solids)
+if place_meeting(x+hspeed,y,ob_wall)
 {
 	hspeed = 0;
 }
 
-if place_meeting(x,y+vspeed,ob_parent_solids)
+if place_meeting(x,y+vspeed,ob_wall)
 {
 	vspeed = 0;
 }
+
+//depth processing
+depth = -y;

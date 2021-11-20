@@ -49,25 +49,26 @@ if (wanted)
 		
 			if (alarm[1] == -1)
 			{
-				sprite_index = spr_tracker_gun_shot;	
+				sprite_index = spr_tracker_riple_shot;	
 				alarm[1] = room_speed*0.5;
 			}
 		}
 	}
 	else
 	{
-		sprite_index = spr_tracker_gun;
+		sprite_index = spr_tracker_riple;
 	}
 }
 
 
+
 //solid processing
-if place_meeting(x+hspeed,y,ob_wall)
+if place_meeting(x+hspeed,y,ob_parent_solids)
 {
 	hspeed = 0;
 }
 
-if place_meeting(x,y+vspeed,ob_wall)
+if place_meeting(x,y+vspeed,ob_parent_solids)
 {
 	vspeed = 0;
 }

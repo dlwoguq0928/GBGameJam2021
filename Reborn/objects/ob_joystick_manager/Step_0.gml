@@ -78,8 +78,11 @@ for(i=1;i>=0;i--)
 				joystick_point_y = joystick_origin_y + delta_y;
 			}
 	
-			p_dir = point_direction(joystick_origin_x,joystick_origin_y,joystick_point_x,joystick_point_y);
-			p_spd = p_spd_std;
+			if (p.alarm[1] == -1) && !instance_exists(ob_player_absorber)
+			{
+				p_dir = point_direction(joystick_origin_x,joystick_origin_y,joystick_point_x,joystick_point_y);
+				p_spd = p_spd_std;
+			}
 		}
 	}
 

@@ -1,6 +1,6 @@
 /// @descr
 
-shot_radius = 300;
+shot_radius = 600;
 shoting = false;
 
 shot_delay = room_speed*1;

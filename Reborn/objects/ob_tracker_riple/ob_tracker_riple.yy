@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_player_absorber",
-    "path": "sprites/spr_player_absorber/spr_player_absorber.yy",
+    "name": "spr_tracker_riple",
+    "path": "sprites/spr_tracker_riple/spr_tracker_riple.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "ob_parent_trackers",
+    "path": "objects/ob_parent_trackers/ob_parent_trackers.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -21,9 +24,10 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -32,7 +36,7 @@
     "path": "folders/Objects/ingame.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ob_player_absorber",
+  "name": "ob_tracker_riple",
   "tags": [],
   "resourceType": "GMObject",
 }

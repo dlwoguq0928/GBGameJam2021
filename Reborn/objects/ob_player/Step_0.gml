@@ -18,12 +18,12 @@ else
 }
 
 //solid processing
-if place_meeting(x+hspeed,y,ob_parent_solids)
+if place_meeting(x+hspeed,y,ob_wall)
 {
 	hspeed = 0;
 }
 
-if place_meeting(x,y+vspeed,ob_parent_solids)
+if place_meeting(x,y+vspeed,ob_wall)
 {
 	vspeed = 0;
 }
@@ -31,8 +31,23 @@ if place_meeting(x,y+vspeed,ob_parent_solids)
 //흡수 타겟 정하기
 absorber_creature = instance_nearest(x,y,ob_parent_creature);
 
+//knockback
+if(knockback_spd > 0) 
+{
+	direction = p_dir;
+	speed = p_spd;
+	
+	motion_add(knockback_dir,knockback_spd);
+	knockback_spd -= 1;
+	if (knockback_spd < 0)
+	{
+		knockback_spd = 0;
+	}
+}
 
 
+//depth processing
+depth = -y;
 
 //룸 바깥 못 나가게 처리
 var spr_w = sprite_get_width(sprite_index);
