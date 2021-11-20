@@ -1,12 +1,15 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_cu1",
+    "path": "sprites/spr_cu1/spr_cu1.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "ob_parent_solids",
-    "path": "objects/ob_parent_solids/ob_parent_solids.yy",
+    "name": "ob_parent_walls",
+    "path": "objects/ob_parent_walls/ob_parent_walls.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -20,17 +23,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "parents",
-    "path": "folders/Objects/ingame/parents.yy",
+    "name": "buildings",
+    "path": "folders/Objects/ingame/buildings.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ob_parent_walls",
+  "name": "ob_cu1",
   "tags": [],
   "resourceType": "GMObject",
 }
