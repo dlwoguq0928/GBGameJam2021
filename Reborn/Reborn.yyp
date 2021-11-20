@@ -37,7 +37,6 @@
     {"id":{"name":"ob_parent_creature","path":"objects/ob_parent_creature/ob_parent_creature.yy",},"order":4,},
     {"id":{"name":"ob_player","path":"objects/ob_player/ob_player.yy",},"order":2,},
     {"id":{"name":"ob_bullet","path":"objects/ob_bullet/ob_bullet.yy",},"order":8,},
-    {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},"order":2,},
     {"id":{"name":"ob_animal","path":"objects/ob_animal/ob_animal.yy",},"order":10,},
     {"id":{"name":"ob_tracker","path":"objects/ob_tracker/ob_tracker.yy",},"order":4,},
     {"id":{"name":"spr_capsule_before","path":"sprites/spr_capsule_before/spr_capsule_before.yy",},"order":0,},
@@ -111,7 +110,6 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"roomId":{"name":"rm_prologue","path":"rooms/rm_prologue/rm_prologue.yy",},},
-    {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"roomId":{"name":"rm_stage1","path":"rooms/rm_stage1/rm_stage1.yy",},},
     {"roomId":{"name":"rm_stage2","path":"rooms/rm_stage2/rm_stage2.yy",},},

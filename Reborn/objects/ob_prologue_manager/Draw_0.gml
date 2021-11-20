@@ -14,7 +14,7 @@ switch(prologue_index)
 {
 	default:	break;
 	case 0:
-		draw_sprite_ext(spr_capsule_before,0,room_width/2,room_height/2,1,1,capsule_angle,c_white,1);
+		draw_sprite_ext(spr_capsule_before,0,room_width/2+random_range(-capsule_angle,capsule_angle),room_height/2+random_range(-capsule_angle,capsule_angle),1,1,0,c_white,1);
 		break;
 	case 1:
 		draw_set_alpha(1);

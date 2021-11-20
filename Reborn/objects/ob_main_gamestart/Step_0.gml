@@ -29,3 +29,13 @@ if position_meeting(mouse_x,mouse_y,id)
 		}
 	}
 }
+
+
+image_blend = c_white;
+if (selected_stage == 1 || selected_stage == 2)
+{
+	if !tutorial_cleared
+	{
+		image_blend = c_gray;
+	}
+}
