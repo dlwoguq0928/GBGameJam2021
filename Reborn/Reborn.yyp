@@ -84,6 +84,7 @@
     {"id":{"name":"spr_human2","path":"sprites/spr_human2/spr_human2.yy",},"order":13,},
     {"id":{"name":"debug","path":"scripts/debug/debug.yy",},"order":2,},
     {"id":{"name":"device_mouse_y_view","path":"scripts/device_mouse_y_view/device_mouse_y_view.yy",},"order":4,},
+    {"id":{"name":"Haptics","path":"extensions/Haptics/Haptics.yy",},"order":0,},
     {"id":{"name":"ob_main_stage_manager","path":"objects/ob_main_stage_manager/ob_main_stage_manager.yy",},"order":0,},
     {"id":{"name":"rm_stage1","path":"rooms/rm_stage1/rm_stage1.yy",},"order":5,},
   ],

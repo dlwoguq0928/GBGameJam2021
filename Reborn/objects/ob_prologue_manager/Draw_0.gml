@@ -17,6 +17,17 @@ switch(prologue_index)
 		draw_sprite_ext(spr_capsule_before,0,room_width/2,room_height/2,1,1,capsule_angle,c_white,1);
 		break;
 	case 1:
+		draw_set_alpha(1);
 		draw_sprite(spr_capsule_after,0,room_width/2,room_height/2);
+		
+		if (text_visible)
+		{
+			draw_set_valign(fa_middle);
+			draw_set_halign(fa_left);
+			draw_set_font(ft_40);
+			draw_set_colour(c_red);
+			draw_set_alpha(text_alpha);
+			draw_text(800,room_height/2,"GAME START");
+		}
 		break;
 }
