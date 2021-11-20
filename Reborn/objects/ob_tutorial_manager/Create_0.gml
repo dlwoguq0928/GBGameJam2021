@@ -10,3 +10,5 @@ str_arr = [
 ];
 
 tutorial_index = 0;
+
+alarm[0] = room_speed*3;
