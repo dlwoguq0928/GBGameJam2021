@@ -107,6 +107,7 @@
     {"id":{"name":"scr_closeup_screen","path":"scripts/scr_closeup_screen/scr_closeup_screen.yy",},"order":7,},
     {"id":{"name":"spr_human2","path":"sprites/spr_human2/spr_human2.yy",},"order":2,},
     {"id":{"name":"debug","path":"scripts/debug/debug.yy",},"order":2,},
+    {"id":{"name":"spr_icon","path":"sprites/spr_icon/spr_icon.yy",},"order":5,},
     {"id":{"name":"device_mouse_y_view","path":"scripts/device_mouse_y_view/device_mouse_y_view.yy",},"order":4,},
     {"id":{"name":"ob_building2","path":"objects/ob_building2/ob_building2.yy",},"order":2,},
     {"id":{"name":"__init_global","path":"scripts/__init_global/__init_global.yy",},"order":6,},
