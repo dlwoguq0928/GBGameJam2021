@@ -1,16 +1,22 @@
 /// @descr
 
 
-if (alarm[1] == -1)
+if (alarm[1] == -1) && !instance_exists(ob_player_absorber)
 {
 	direction = p_dir;
 	speed = p_spd;
+}
+else
+{
+	direction = p_dir;
+	speed = 0;
 }
 	
 if (hspeed != 0) 
 {
 	image_xscale = sign(hspeed);
-	image_speed = 0.25;
+	if (sprite_index == spr_player) image_speed = 1;
+	else image_speed = 0.25;
 }
 else
 {
@@ -34,8 +40,16 @@ absorber_creature = instance_nearest(x,y,ob_parent_creature);
 //knockback
 if(knockback_spd > 0) 
 {
-	direction = p_dir;
-	speed = p_spd;
+	if (alarm[1] == -1) && !instance_exists(ob_player_absorber)
+	{
+		direction = p_dir;
+		speed = (sprite_index == spr_player) ? 6 : p_spd;
+	}
+	else
+	{
+		direction = p_dir;
+		speed = 0;
+	}
 	
 	motion_add(knockback_dir,knockback_spd);
 	knockback_spd -= 1;

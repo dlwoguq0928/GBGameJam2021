@@ -17,10 +17,14 @@ else
 if (wanted)
 {
 	//tracker move
-	if (p.alarm[1] == -1)
+	if (p.alarm[1] == -1) && !instance_exists(ob_player_absorber)
 	{
 		direction = point_direction(x,y,p.x,p.y);
 		speed = t_spd_std + 2;
+	}
+	else
+	{
+		speed = 0;
 	}
 	
 	//attack player
@@ -41,6 +45,10 @@ if (wanted)
 				//p.x += lengthdir_x(10,point_direction(x,y,p.x,p.y));
 				//p.y += lengthdir_y(10,point_direction(x,y,p.x,p.y));
 				scr_shake_screen(10);
+				
+				//particle & attack_effect
+				repeat(5) scr_particle_generate();
+				ob_screen_manager.alarm[2] = room_speed*0.25;
 	
 				if(p_hp <= 0) scr_gameover();
 			}

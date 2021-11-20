@@ -40,7 +40,7 @@ if (wanted)
 		if (shot_tick >= shot_delay)
 		{
 			shot_tick = 0;
-			var inst = instance_create_layer(x,y,layer,ob_bullet);
+			var inst = instance_create_layer(x,y,"Instances",ob_bullet);
 			inst.direction = point_direction(x,y,p.x,p.y);
 			inst.speed = 10;
 			

@@ -22,7 +22,7 @@ t_spd_std = 3;
 
 globalvar wanted, timeline_max, timeline;
 wanted = false;
-timeline_max = 15;  //seconds
+timeline_max = 12;  //seconds
 timeline = timeline_max;
 
 globalvar xp, max_xp;  //energy bar

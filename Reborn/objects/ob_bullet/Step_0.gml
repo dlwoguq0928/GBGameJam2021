@@ -21,6 +21,11 @@ if place_meeting(x,y,p)
 			p_invincible = room_speed*0.5;
 			//p.x += lengthdir_x(10,point_direction(x,y,p.x,p.y));
 			//p.y += lengthdir_y(10,point_direction(x,y,p.x,p.y));
+				
+			//particle & attack_effect
+			repeat(5) scr_particle_generate();
+			ob_screen_manager.alarm[2] = room_speed*0.25;
+			
 			if (p_hp <= 0)	scr_gameover();
 		}
 	}

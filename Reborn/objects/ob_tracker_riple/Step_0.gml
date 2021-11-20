@@ -16,8 +16,15 @@ else
 if (wanted)
 {
 	//tracker move
-	direction = point_direction(x,y,p.x,p.y);
-	speed = t_spd_std;
+	if (p.alarm[1] == -1) && !instance_exists(ob_player_absorber)
+	{
+		direction = point_direction(x,y,p.x,p.y);
+		speed = t_spd_std;
+	}
+	else
+	{
+		speed = 0;
+	}
 	
 	//shot (attack player)
 	var dist = point_distance(x,y,p.x,p.y);
@@ -40,7 +47,7 @@ if (wanted)
 		if (shot_tick >= shot_delay)
 		{
 			shot_tick = 0;
-			var inst = instance_create_layer(x,y,layer,ob_bullet);
+			var inst = instance_create_layer(x,y,"Instances",ob_bullet);
 			inst.direction = point_direction(x,y,p.x,p.y);
 			inst.speed = 10;
 			

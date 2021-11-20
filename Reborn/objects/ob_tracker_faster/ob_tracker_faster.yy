@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_tracker",
-    "path": "sprites/spr_tracker/spr_tracker.yy",
+    "name": "spr_tracker_faster",
+    "path": "sprites/spr_tracker_faster/spr_tracker_faster.yy",
   },
   "solid": false,
   "visible": true,

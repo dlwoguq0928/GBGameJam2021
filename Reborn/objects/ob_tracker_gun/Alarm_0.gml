@@ -11,5 +11,8 @@ if (!wanted)
 	{
 		direction = irandom(359);
 	}
-	speed = t_spd_std;
+	if (p.alarm[1] == -1) && !instance_exists(ob_player_absorber)
+	{
+		speed = t_spd_std;
+	}
 }

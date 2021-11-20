@@ -1,11 +1,5 @@
 /// @descr
 
-//player move
-with(ob_parent_not_players)
-{
-	direction = p_dir - 180;
-	speed = p_spd;
-}
 
 //reduce the timeline
 if (timeline > 0)
@@ -49,7 +43,7 @@ if (p_invincible > 0)
 
 
 //지명수배
-if (timeline <= 9) 
+if (timeline <= 8) 
 {
 	wanted = true;
 }

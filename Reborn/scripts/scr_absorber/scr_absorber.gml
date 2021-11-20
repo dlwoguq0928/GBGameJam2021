@@ -11,13 +11,18 @@ function scr_absorber_st(absorber_creature){
 		
 		absorber_cooldown = absorber_cooldown_std;
 		
-		p.sprite_index = spr_player; //괴물 스프라이트로 잠시 되돌리기
+		//p.sprite_index = spr_player; //괴물 스프라이트로 잠시 되돌리기
 			
 		//흡수한 대상 제거
 		with(absorber_creature)
 		{
 			instance_destroy();
 		}
+		
+		p_invincible = room_speed*1;
+		
+		//efs
+		audio_play_sound(snd_efs_tentacle,1,false);
 	}
 }
 
