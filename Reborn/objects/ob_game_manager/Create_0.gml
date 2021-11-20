@@ -33,7 +33,7 @@ max_xp = 5;
 alarm[0] = room_speed*1;  //start loop : generates trackers
 
 tracker_number = [
-	5,
+	1,
 	10,
 	15,
 ];

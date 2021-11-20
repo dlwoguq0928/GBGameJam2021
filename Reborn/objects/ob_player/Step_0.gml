@@ -4,7 +4,7 @@
 if (alarm[1] == -1) && !instance_exists(ob_player_absorber)
 {
 	direction = p_dir;
-	speed = (sprite_index == spr_player) ? 6 : p_spd;
+	speed = (sprite_index == spr_player) ? p_spd*3/4 : p_spd;
 }
 else
 {
@@ -45,7 +45,7 @@ if(knockback_spd > 0)
 	if (alarm[1] == -1) && !instance_exists(ob_player_absorber)
 	{
 		direction = p_dir;
-		speed = (sprite_index == spr_player) ? 6 : p_spd;
+		speed = (sprite_index == spr_player) ? p_spd*3/4 : p_spd;
 	}
 	else
 	{
