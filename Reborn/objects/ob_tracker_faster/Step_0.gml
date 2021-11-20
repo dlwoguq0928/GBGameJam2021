@@ -24,9 +24,10 @@ if (wanted)
 	{
 		speed = 0;
 	
-		p.x += lengthdir_x(10,point_direction(x,y,p.x,p.y));
-		p.y += lengthdir_y(10,point_direction(x,y,p.x,p.y));
 		p_hp -= 1;
+		//p.x += lengthdir_x(10,point_direction(x,y,p.x,p.y));
+		//p.y += lengthdir_y(10,point_direction(x,y,p.x,p.y));
+		scr_shake_screen(10);
 	
 		if(p_hp <= 0) scr_gameover();
 	}
