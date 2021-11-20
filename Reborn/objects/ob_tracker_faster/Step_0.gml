@@ -17,8 +17,11 @@ else
 if (wanted)
 {
 	//tracker move
-	direction = point_direction(x,y,p.x,p.y);
-	speed = t_spd_std + 2;
+	if (p.alarm[1] == -1)
+	{
+		direction = point_direction(x,y,p.x,p.y);
+		speed = t_spd_std + 2;
+	}
 	
 	//attack player
 	if place_meeting(x,y,p)

@@ -1,7 +1,8 @@
 /// @descr
 
 
-if (id == absorber_creature)
+if (p.alarm[1] != -1)
+and (absorber_creature == id)
 {
 	speed = 0;
 }

@@ -10,6 +10,8 @@ function scr_absorber_st(absorber_creature){
 		absorber_creature.image_blend = c_black;
 		
 		absorber_cooldown = absorber_cooldown_std;
+		
+		p.sprite_index = spr_player; //괴물 스프라이트로 잠시 되돌리기
 	}
 }
 
