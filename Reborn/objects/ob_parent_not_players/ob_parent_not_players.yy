@@ -22,7 +22,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "parents",
-    "path": "folders/Objects/parents.yy",
+    "path": "folders/Objects/ingame/parents.yy",
   },
   "resourceVersion": "1.0",
   "name": "ob_parent_not_players",

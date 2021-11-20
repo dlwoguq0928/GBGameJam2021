@@ -6,16 +6,26 @@ p = ob_player;
 globalvar p_dir, p_spd, p_spd_std, p_max_hp, p_hp;  //player variables
 p_dir = -1; 
 p_spd = 0;
-p_spd_std = 10;  //player standard speed
+p_spd_std = 8;  //player standard speed
 p_max_hp = 100;
 p_hp = p_max_hp;
 
+globalvar absorber_radius, absorber_creature, absorber_cooldown_std, absorber_cooldown;
+absorber_radius = 100;  //흡수 가능 범위 (px)
+absorber_creature = noone;
+absorber_cooldown_std = room_speed*10;
+absorber_cooldown = absorber_cooldown_std;
+
 globalvar t_spd_std;  //tracker variables
-t_spd_std = 7;
+t_spd_std = 3;
 
 globalvar wanted, timeline_max, timeline;
-wanted = "지명수배";
+wanted = false;
 timeline_max = 20;  //seconds
 timeline = timeline_max;
+
+globalvar xp, max_xp;  //energy bar
+xp = 1;
+max_xp = 10;
 
 alarm[0] = room_speed*1;  //start loop : generates trackers

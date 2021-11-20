@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "managers",
-    "path": "folders/Objects/managers.yy",
+    "path": "folders/Objects/ingame/managers.yy",
   },
   "resourceVersion": "1.0",
   "name": "ob_joystick_manager",

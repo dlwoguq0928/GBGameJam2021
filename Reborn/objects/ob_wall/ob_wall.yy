@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "ob_parent_walls",
+    "path": "objects/ob_parent_walls/ob_parent_walls.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "ingame",
+    "path": "folders/Objects/ingame.yy",
   },
   "resourceVersion": "1.0",
   "name": "ob_wall",
