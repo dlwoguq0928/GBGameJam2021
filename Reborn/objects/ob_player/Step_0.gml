@@ -1,8 +1,11 @@
 /// @descr
 
 
-direction = p_dir;
-speed = p_spd;
+if (alarm[1] == -1)
+{
+	direction = p_dir;
+	speed = p_spd;
+}
 	
 if (hspeed != 0) 
 {
@@ -37,7 +40,7 @@ if (y < spr_h/2) y = spr_h/2;
 if (y > room_height - spr_h/2) y = room_height - spr_h/2;
 
 
-
+scr_shake_screen(100);
 
 
 

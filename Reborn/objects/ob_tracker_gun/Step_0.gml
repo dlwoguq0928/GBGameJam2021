@@ -11,6 +11,7 @@ else
 	image_speed = 0;
 }
 
+
 //if wanted
 if (wanted)
 {
@@ -60,3 +61,14 @@ if (wanted)
 }
 
 
+
+//solid processing
+if place_meeting(x+hspeed,y,ob_parent_solids)
+{
+	hspeed = 0;
+}
+
+if place_meeting(x,y+vspeed,ob_parent_solids)
+{
+	vspeed = 0;
+}

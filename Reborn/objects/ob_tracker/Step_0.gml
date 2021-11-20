@@ -24,12 +24,15 @@ if (wanted)
 	{
 		speed = 0;
 	
-		p_hp -= 1;
-		//p.x += lengthdir_x(10,point_direction(x,y,p.x,p.y));
-		//p.y += lengthdir_y(10,point_direction(x,y,p.x,p.y));
-		scr_shake_screen(10);
+		if (p.alarm[1] == -1)
+		{
+			p_hp -= 1;
+			//p.x += lengthdir_x(10,point_direction(x,y,p.x,p.y));
+			//p.y += lengthdir_y(10,point_direction(x,y,p.x,p.y));
+			scr_shake_screen(10);
 	
-		if(p_hp <= 0) scr_gameover();
+			if(p_hp <= 0) scr_gameover();
+		}
 	}
 	else
 	{
@@ -58,4 +61,15 @@ if (wanted)
 	{
 		sprite_index = spr_tracker;
 	}
+}
+
+//solid processing
+if place_meeting(x+hspeed,y,ob_parent_solids)
+{
+	hspeed = 0;
+}
+
+if place_meeting(x,y+vspeed,ob_parent_solids)
+{
+	vspeed = 0;
 }

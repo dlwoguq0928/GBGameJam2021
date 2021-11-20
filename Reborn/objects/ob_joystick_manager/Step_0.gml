@@ -50,7 +50,10 @@ for(i=1;i>=0;i--)
 			{
 				if (absorber_cooldown == 0)
 				{
-					scr_absorber_st(absorber_creature);  //'흡수'
+					if instance_exists(absorber_creature)
+					{
+						scr_absorber_st(absorber_creature);  //'흡수'
+					}
 				}
 			}
 		}

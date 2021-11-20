@@ -29,3 +29,14 @@ xp = 1;
 max_xp = 10;
 
 alarm[0] = room_speed*1;  //start loop : generates trackers
+
+tracker_number = [
+	5,
+	10,
+	15,
+];
+tracker_objs = [
+	[ob_tracker],
+	[ob_tracker,ob_tracker_faster],
+	[ob_tracker,ob_tracker_gun],
+];
