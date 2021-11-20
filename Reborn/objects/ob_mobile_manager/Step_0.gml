@@ -27,13 +27,13 @@ else if (room == rm_stage0 || room == rm_stage1 || room == rm_stage2)
 {
 	if keyboard_check_pressed(vk_backspace)
 	{
-		room_goto(rm_main);
+		room_goto_custom(rm_main);
 	}
 }
 else
 {
 	if keyboard_check_pressed(vk_backspace)
 	{
-		room_goto_previous();
+		room_goto_custom_previous();
 	}
 }

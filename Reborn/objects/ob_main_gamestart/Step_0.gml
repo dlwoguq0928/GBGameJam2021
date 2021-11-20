@@ -12,7 +12,7 @@ if position_meeting(mouse_x,mouse_y,id)
 		if (selected_stage == 0)
 		{
 			var rm_idx = asset_get_index("rm_stage"+string(selected_stage));
-			room_goto(rm_idx);
+			room_goto_custom(rm_idx);
 			tutorial_cleared = true;
 		}
 		else
@@ -20,7 +20,7 @@ if position_meeting(mouse_x,mouse_y,id)
 			if (tutorial_cleared)
 			{
 				var rm_idx = asset_get_index("rm_stage"+string(selected_stage));
-				room_goto(rm_idx);
+				room_goto_custom(rm_idx);
 			}
 			else
 			{
