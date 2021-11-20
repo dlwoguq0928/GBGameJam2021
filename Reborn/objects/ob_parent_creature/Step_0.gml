@@ -10,6 +10,16 @@ else
 	image_speed = 0;
 }
 
+//solid processing
+if place_meeting(x+hspeed,y,ob_parent_solids)
+{
+	hspeed = 0;
+}
+
+if place_meeting(x,y+vspeed,ob_parent_solids)
+{
+	vspeed = 0;
+}
 
 //룸 바깥 못 나가게 처리
 var spr_w = sprite_get_width(sprite_index);

@@ -12,6 +12,12 @@ function scr_absorber_st(absorber_creature){
 		absorber_cooldown = absorber_cooldown_std;
 		
 		p.sprite_index = spr_player; //괴물 스프라이트로 잠시 되돌리기
+			
+		//흡수한 대상 제거
+		with(absorber_creature)
+		{
+			instance_destroy();
+		}
 	}
 }
 
@@ -24,12 +30,6 @@ function scr_absorber_nd(absorber_creature){
 			p.sprite_index = absorber_spr;
 			xp += 1;
 			timeline = timeline_max;
-			
-			//흡수한 대상 제거
-			with(absorber_creature)
-			{
-				instance_destroy();
-			}
 			
 			scr_closeup_screen(300);
 		}
