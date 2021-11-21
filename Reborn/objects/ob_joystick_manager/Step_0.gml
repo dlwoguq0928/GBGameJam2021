@@ -45,12 +45,12 @@ for(i=1;i>=0;i--)
 		dist = point_distance(button_origin_x,button_origin_y,mouse_view_x,mouse_view_y);
 		if (dist <= button_radius)
 		{
-			dist = point_distance(p.x,p.y,absorber_creature.x,absorber_creature.y);
-			if (dist <= absorber_radius)
+			if instance_exists(absorber_creature)
 			{
-				if (absorber_cooldown == 0)
+				dist = point_distance(p.x,p.y,absorber_creature.x,absorber_creature.y);
+				if (dist <= absorber_radius)
 				{
-					if instance_exists(absorber_creature)
+					if (absorber_cooldown == 0)
 					{
 						scr_absorber_st(absorber_creature);  //'흡수'
 					}

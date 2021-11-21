@@ -35,7 +35,10 @@ function scr_absorber_nd(){
 		p.sprite_index = absorber_spr;
 		xp += 1;
 		timeline = timeline_max;
-			
+		
+		p_hp += 2;
+		p_hp = min(p_max_hp,p_hp);
+		
 		scr_closeup_screen(300);
 	}
 	

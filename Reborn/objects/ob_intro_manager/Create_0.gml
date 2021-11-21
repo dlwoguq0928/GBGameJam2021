@@ -21,4 +21,8 @@ scripts = [
 	"",
 	"",
 	"",
+	"",
 ];
+
+//intro bgm
+audio_play_sound(snd_bgm_intro,0,true);

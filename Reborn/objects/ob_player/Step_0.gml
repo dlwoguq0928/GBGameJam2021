@@ -25,7 +25,10 @@ else
 
 
 //흡수 타겟 정하기
-absorber_creature = instance_nearest(x,y,ob_parent_creature);
+if instance_exists(ob_parent_creature)
+{
+	absorber_creature = instance_nearest(x,y,ob_parent_creature);
+}
 
 //show_debug_message(sprite_get_name(absorber_creature.sprite_index))
 
